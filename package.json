@@ -1,0 +1,20 @@
+{
+  "name": "screeps-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+  "screeps_bot": true,
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "q": "^1.5.1",
+    "rimraf": "3.0.2",
+    "screeps": "4.2.3",
+    "screeps-api": "1.13.0",
+    "screepsmod-admin-utils": "1.24.0",
+    "screepsmod-auth": "2.6.2"
+  },
+  "scripts": {
+    "test-server": "node server/test"
+  },
+  "dependencies": {}
+}
