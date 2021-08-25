@@ -9,6 +9,8 @@ on:
 
 jobs:
   build:
+    container:
+      options: --cpus 5
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -19,4 +21,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run test-server
-    options: --cpus 5
+
