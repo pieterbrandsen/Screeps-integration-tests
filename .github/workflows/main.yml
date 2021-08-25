@@ -9,8 +9,6 @@ on:
 
 jobs:
   build:
-    container:
-      options: --cpus 5
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
