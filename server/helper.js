@@ -6,7 +6,7 @@ const lib = require('@screeps/launcher/lib/index');
 const _ = require('lodash');
 const {ScreepsAPI} = require('screeps-api');
 
-const dir = 'tmp-test-server';
+const dir = 'server/files/tmp-test-server';
 const port = 21025;
 let hostname = '127.0.0.1'
 
@@ -113,7 +113,7 @@ async function initServer() {
   fs.chmodSync(path.resolve(dir, 'node_modules/.hooks/uninstall'), '755');
 
   await new Promise(((resolve) => {
-    fs.copyFile('server/mods.json', `${dir}/mods.json`, (err) => {
+    fs.copyFile('server/files/mods.json', `${dir}/mods.json`, (err) => {
       if (err) throw err;
       resolve();
     });
